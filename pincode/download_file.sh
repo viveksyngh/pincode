@@ -1,0 +1,1 @@
+wget "https://data.gov.in/sites/default/files/all_india_pin_code.csv"

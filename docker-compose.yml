@@ -1,0 +1,20 @@
+version: '2'
+
+
+services:
+  django:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    depends_on:
+      - elasticsearch
+    links:
+      - elasticsearch:elasticsearch
+    ports:
+      - "9000:8000"
+
+  elasticsearch:
+    image: elasticsearch:latest
+    ports:
+      - "9200:9200"
+      - "9300:9300"
