@@ -21,12 +21,11 @@ RUN apt-get install -y build-essential
 RUN apt-get -y install wget
 RUN apt-get -y install php5 libapache2-mod-php5 php5-mcrypt
 RUN apt-get -y install curl libcurl3 libcurl3-dev php5-curl
+RUN pip install uwsgi
 
 RUN mkdir $DOCKYARD_SRC
 
 COPY . $DOCKYARD_SRVHOME
-
-RUN pip install uwsgi
 RUN pip install -r $DOCKYARD_SRVHOME/requirements.txt
 
 EXPOSE 8001 8000
