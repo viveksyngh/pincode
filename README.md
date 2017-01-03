@@ -23,7 +23,7 @@ A web application in python and elasticsearch for searching all pincode data of 
       
       ``http://localhost:9000/search?state=Bihar&district=Rohtas``
       
-      
+      `` NOTE :- Can only be search with follwoing fields "state", "district", "pincode", "region", "circle", "taluk", "divison", "q"``
   
      
      
