@@ -2,7 +2,7 @@ appnope==0.1.0
 backports.shutil-get-terminal-size==1.0.0
 beautifulsoup4==4.5.1
 decorator==4.0.10
-Django==1.9
+Django==1.11.23
 django-cors-headers==1.1.0
 elasticsearch==5.0.1
 elasticsearch-dsl==5.0.0
